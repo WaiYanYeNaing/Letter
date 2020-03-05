@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { StyleSheet, Text, View } from 'react-native'
 import * as firebase from 'firebase'
 import * as Facebook from 'expo-facebook'
-import { Container, Form, Item, Label, Input, Button } from 'native-base'
+import { Container, Form, Item, Label, Input, Button, Toast } from 'native-base'
 
 // Initialize Firebase
 const firebaseConfig = {
@@ -80,6 +80,11 @@ export default class Login extends React.Component {
           })
         )
     } catch (error) {
+      Toast.show({
+        text: 'Wrong Email or Password',
+        buttonText: 'Okay',
+        duration: 3000
+      })
       console.log(error.toString())
     }
   }
@@ -173,10 +178,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 30,
-    backgroundColor: '#D4B996FF'
+    backgroundColor: '#F0F6F7FF'
   },
   textInput: {
-    borderBottomColor: '#A07855FF',
+    borderBottomColor: '#A89C94FF',
     padding: 3
   }
 })

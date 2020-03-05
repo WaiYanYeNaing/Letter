@@ -19,7 +19,7 @@ function App() {
             title: 'Login Page',
             headerTitleAlign: 'center',
             headerTintColor: 'white',
-            headerStyle: { backgroundColor: '#A07855FF' },
+            headerStyle: { backgroundColor: '#A89C94FF' },
             headerTitleStyle: { fontWeight: 'bold' }
           }}
         />
@@ -30,7 +30,7 @@ function App() {
             title: 'Home Page',
             headerTitleAlign: 'center',
             headerTintColor: 'white',
-            headerStyle: { backgroundColor: '#A07855FF' }
+            headerStyle: { backgroundColor: '#A89C94FF' }
           }}
         />
       </Stack.Navigator>

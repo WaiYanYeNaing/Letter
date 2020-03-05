@@ -38,7 +38,7 @@ export default class Second extends Component {
   render() {
     return (
       <Container
-        style={{ backgroundColor: '#D4B996FF', height: 500, padding: 10 }}
+        style={{ backgroundColor: '#F0F6F7FF', height: 500, padding: 10 }}
       >
         <View>
           <DeckSwiper

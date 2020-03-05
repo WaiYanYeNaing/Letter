@@ -107,9 +107,9 @@ export default class Home extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header style={styles.header}>
+        {/* <Header style={styles.header}>
           <Content>
-            <Item regular style={{ borderColor: '#D4B996FF' }}>
+            <Item regular style={{ borderColor: '#F0F6F7FF' }}>
               <Input
                 placeholder="Add Note"
                 style={{ color: '#515151' }}
@@ -119,11 +119,11 @@ export default class Home extends Component {
                 style={styles.button}
                 onPress={() => this.addRow(this.state.newContact)}
               >
-                <Icon name="add" style={{ color: '#D4B996FF' }} />
+                <Icon name="add" style={{ color: '#F0F6F7FF' }} />
               </Button>
             </Item>
           </Content>
-        </Header>
+        </Header> */}
 
         {/* <Content>
           {this.state.listViewData.map((value, index) => {
@@ -190,7 +190,7 @@ export default class Home extends Component {
               onPress={() => this.setState({ selectedTab: 'third' })}
             >
               <Icon name="navigate" style={{ color: 'black' }} />
-              <Text>Apps</Text>
+              <Text>Write</Text>
             </Button>
             <Button
               vertical
@@ -214,19 +214,20 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily: 'NotoSerif-Regular',
     paddingTop: StatusBar.currentHeight,
-    backgroundColor: '#D4B996FF'
+    backgroundColor: '#F0F6F7FF'
   },
   header: {
     marginTop: 10,
-    backgroundColor: '#D4B996FF'
+    backgroundColor: '#F0F6F7FF'
   },
   button: {
     marginTop: 4,
-    backgroundColor: '#A07855FF'
+    backgroundColor: '#A89C94FF'
   },
   footerTab: {
-    backgroundColor: '#A07855FF'
+    backgroundColor: '#A89C94FF'
   },
   footerSelected: {
     backgroundColor: 'rgba(52, 52, 52, 0.25)'
