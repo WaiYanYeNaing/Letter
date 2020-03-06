@@ -214,7 +214,6 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'NotoSerif-Regular',
     paddingTop: StatusBar.currentHeight,
     backgroundColor: '#F0F6F7FF'
   },
