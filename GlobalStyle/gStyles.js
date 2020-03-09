@@ -1,10 +1,13 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from "react-native";
 
 const gStyles = StyleSheet.create({
   center: {
-    marginLeft: 'auto',
-    marginRight: 'auto'
+    marginLeft: "auto",
+    marginRight: "auto"
+  },
+  card: {
+    backgroundColor: "#EAEBF9"
   }
-})
+});
 
-export default gStyles
+export default gStyles;
