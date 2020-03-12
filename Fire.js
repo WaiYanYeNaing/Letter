@@ -1,15 +1,13 @@
 import firebase from 'firebase'
 import React, { Component } from 'react'
+import { AsyncStorage } from 'react-native'
 
+let room_id = null
 class Fire extends Component {
   constructor() {
     //   // this.init()
     //   // this.checkAuth()
     super()
-
-    this.state = {
-      receivedUser: null
-    }
   }
 
   //   init = () => {
@@ -60,12 +58,12 @@ class Fire extends Component {
     }
   }
 
-  get = (receivedUser, callback) => {
-    console.log(receivedUser)
+  get = (roomID, callback) => {
+    room_id = roomID
     firebase
       .database()
-      .ref('messages/' + this.uid)
-      .child('/' + receivedUser)
+      .ref('messages')
+      .child(room_id)
       .on('child_added', snapshot => {
         callback(this.parse(snapshot))
       })
@@ -75,17 +73,15 @@ class Fire extends Component {
     this.db.off()
   }
 
-  receivedUser = receivedUser => {
-    this.setState({
-      receivedUser
-    })
-  }
-
   get db() {
-    return firebase
-      .database()
-      .ref('messages/' + this.uid)
-      .child('/' + this.state.receivedUser)
+    if (room_id) {
+      return firebase
+        .database()
+        .ref('messages')
+        .child(room_id)
+    } else {
+      return firebase.database().ref('messages')
+    }
   }
 
   get uid() {

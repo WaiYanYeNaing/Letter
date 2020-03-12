@@ -8,6 +8,7 @@ import {
 } from 'react-native'
 import Fire from '../Fire'
 import { GiftedChat } from 'react-native-gifted-chat'
+import { AsyncStorage } from 'react-native'
 
 export default class Chat extends Component {
   state = {
@@ -22,8 +23,7 @@ export default class Chat extends Component {
   }
 
   componentDidMount() {
-    Fire.receivedUser(this.props.route.params?.receivedUser)
-    Fire.get(this.props.route.params?.receivedUser, messages =>
+    Fire.get(this.props.route.params?.roomID, messages =>
       this.setState(previous => ({
         messages: GiftedChat.append(previous.messages, messages)
       }))

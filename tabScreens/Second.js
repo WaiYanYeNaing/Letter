@@ -23,7 +23,7 @@ export default class Second extends Component {
             backgroundColor: '#5b7fff'
           }}
           onPress={() =>
-            this.props.navigation.navigate('Chat', { receivedUser: 'user1' })
+            this.props.navigation.navigate('Chat', { roomID: 'r1' })
           }
         >
           <Text>HOLA</Text>
@@ -35,7 +35,7 @@ export default class Second extends Component {
             backgroundColor: '#4a69db'
           }}
           onPress={() =>
-            this.props.navigation.navigate('Chat', { receivedUser: 'user2' })
+            this.props.navigation.navigate('Chat', { roomID: 'r2' })
           }
         >
           <Text>HOLA</Text>
@@ -47,7 +47,7 @@ export default class Second extends Component {
             backgroundColor: '#6c7596'
           }}
           onPress={() =>
-            this.props.navigation.navigate('Chat', { receivedUser: 'user3' })
+            this.props.navigation.navigate('Chat', { roomID: 'r3' })
           }
         >
           <Text>HOLA</Text>
