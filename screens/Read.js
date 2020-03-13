@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, SafeAreaView, ScrollView } from 'react-native'
+import {
+  Text,
+  View,
+  StyleSheet,
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity
+} from 'react-native'
 import { Container, Icon, Card, CardItem, Body, Fab, Button } from 'native-base'
 import gStyles from '../GlobalStyle/gStyles'
 
@@ -28,14 +35,18 @@ export default class Read extends Component {
           </CardItem>
           <CardItem style={[gStyles.card, { margin: 20 }]}>
             <Body style={{ paddingHorizontal: 20 }}>
-              <Text style={{ fontFamily: 'notoSerif-bold' }}>
-                <Icon
-                  type="FontAwesome5"
-                  name="user-nurse"
-                  style={{ fontSize: 18 }}
-                />
-                &nbsp;&nbsp;&nbsp;{this.props.route.params?.item.header}
-              </Text>
+              <TouchableOpacity
+                onPress={() => this.props.navigation.navigate('Profile')}
+              >
+                <Text style={{ fontFamily: 'notoSerif-bold' }}>
+                  <Icon
+                    type="FontAwesome5"
+                    name="user-nurse"
+                    style={{ fontSize: 18 }}
+                  />
+                  &nbsp;&nbsp;&nbsp;{this.props.route.params?.item.header}
+                </Text>
+              </TouchableOpacity>
               <Text style={{ fontSize: 13, paddingVertical: 4 }}>
                 &nbsp;&nbsp;&nbsp;
                 {this.props.route.params?.item.date}

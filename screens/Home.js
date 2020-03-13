@@ -141,8 +141,8 @@ export default class Home extends Component {
               active={this.state.selectedTab === 'second'}
               onPress={() => this.setState({ selectedTab: 'second' })}
             >
-              <Icon name="camera" style={{ color: 'black' }} />
-              <Text>Camera</Text>
+              <Icon type="Entypo" name="chat" style={{ color: 'black' }} />
+              <Text>Chat</Text>
             </Button>
             <Button
               vertical
@@ -171,8 +171,12 @@ export default class Home extends Component {
               active={this.state.selectedTab === 'fourth'}
               onPress={() => this.setState({ selectedTab: 'fourth' })}
             >
-              <Icon name="person" style={{ color: 'black' }} />
-              <Text>Profile</Text>
+              <Icon
+                type="Ionicons"
+                name="md-settings"
+                style={{ color: 'black' }}
+              />
+              <Text>Settings</Text>
             </Button>
           </FooterTab>
         </Footer>

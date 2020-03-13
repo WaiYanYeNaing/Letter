@@ -14,6 +14,7 @@ import Found from './screens/Found'
 import Manual from './screens/Manual'
 import Read from './screens/Read'
 import Chat from './screens/Chat'
+import Profile from './screens/Profile'
 
 const Stack = createStackNavigator()
 
@@ -119,7 +120,20 @@ function App() {
             name="Chat"
             component={Chat}
             options={{
-              title: 'Chat',
+              title: '',
+              headerTitleAlign: 'center',
+              headerTintColor: 'white',
+              headerStyle: { backgroundColor: '#B497D6' },
+              headerTitleStyle: {
+                fontFamily: 'notoSerif-bold'
+              }
+            }}
+          />
+          <Stack.Screen
+            name="Profile"
+            component={Profile}
+            options={{
+              title: 'Profile',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
               headerStyle: { backgroundColor: '#B497D6' },
