@@ -21,7 +21,7 @@ export default class Profile extends Component {
         <Thumbnail
           style={[styles.thumbnail, gStyles.center]}
           large
-          source={require('../assets/images/3.jpg')}
+          source={this.props.route.params?.profile_img}
         />
         <Text
           style={[
@@ -29,7 +29,7 @@ export default class Profile extends Component {
             gStyles.center
           ]}
         >
-          Jhon Doe
+          {this.props.route.params?.name}
         </Text>
         <View style={styles.ListItemContainer}>
           <ListItem icon style={{ marginVertical: 5 }}>
@@ -41,7 +41,9 @@ export default class Profile extends Component {
             </Body>
             <Right>
               <Badge style={{ backgroundColor: '#bababa' }}>
-                <Text style={{ paddingTop: 3 }}>21</Text>
+                <Text style={{ paddingTop: 3 }}>
+                  {this.props.route.params?.received_letter}
+                </Text>
               </Badge>
             </Right>
           </ListItem>
@@ -69,7 +71,9 @@ export default class Profile extends Component {
             </Body>
             <Right>
               <Badge style={{ backgroundColor: '#bababa' }}>
-                <Text style={{ paddingTop: 3 }}>10</Text>
+                <Text style={{ paddingTop: 3 }}>
+                  {this.props.route.params?.friends}
+                </Text>
               </Badge>
             </Right>
           </ListItem>
@@ -82,7 +86,9 @@ export default class Profile extends Component {
             </Body>
             <Right>
               <Badge style={{ backgroundColor: '#bababa' }}>
-                <Text style={{ paddingTop: 3 }}>English</Text>
+                <Text style={{ paddingTop: 3 }}>
+                  {this.props.route.params?.languages}
+                </Text>
               </Badge>
             </Right>
           </ListItem>
@@ -95,7 +101,9 @@ export default class Profile extends Component {
             </Body>
             <Right>
               <Badge style={{ backgroundColor: '#bababa' }}>
-                <Text style={{ paddingTop: 3 }}>21</Text>
+                <Text style={{ paddingTop: 3 }}>
+                  {this.props.route.params?.ages}
+                </Text>
               </Badge>
             </Right>
           </ListItem>

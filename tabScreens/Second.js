@@ -34,7 +34,9 @@ export default class Second extends Component {
               <Body style={{ marginTop: 15 }}>
                 <Thumbnail large source={require('../assets/images/1.jpg')} />
                 <View style={{ flex: 1, flexDirection: 'row' }}>
-                  <Text style={{ paddingTop: 20, fontSize: 13 }}>HOLA1</Text>
+                  <Text style={{ paddingTop: 20, fontSize: 13 }}>
+                    Nikola Tesla
+                  </Text>
                   <Badge style={styles.badge}></Badge>
                 </View>
               </Body>
@@ -50,7 +52,9 @@ export default class Second extends Component {
               <Body style={{ marginTop: 15 }}>
                 <Thumbnail large source={require('../assets/images/2.jpg')} />
                 <View style={{ flex: 1, flexDirection: 'row' }}>
-                  <Text style={{ paddingTop: 20, fontSize: 13 }}>HOLA2</Text>
+                  <Text style={{ paddingTop: 20, fontSize: 13 }}>
+                    Thomas Edison
+                  </Text>
                   <Badge style={styles.badge}></Badge>
                 </View>
               </Body>
@@ -68,7 +72,7 @@ export default class Second extends Component {
               <Body style={{ marginTop: 15 }}>
                 <Thumbnail large source={require('../assets/images/3.jpg')} />
                 <View style={{ flex: 1, flexDirection: 'row' }}>
-                  <Text style={{ paddingTop: 20, fontSize: 13 }}>HOLA3</Text>
+                  <Text style={{ paddingTop: 20, fontSize: 13 }}>Leonardo</Text>
                   <Badge style={styles.badge}></Badge>
                 </View>
               </Body>
@@ -84,7 +88,7 @@ export default class Second extends Component {
               <Body style={{ marginTop: 15 }}>
                 <Thumbnail large source={require('../assets/images/4.jpg')} />
                 <View style={{ flex: 1, flexDirection: 'row' }}>
-                  <Text style={{ paddingTop: 20, fontSize: 13 }}>HOLA4</Text>
+                  <Text style={{ paddingTop: 20, fontSize: 13 }}>Jackie</Text>
                   <Badge style={styles.badge}></Badge>
                 </View>
               </Body>

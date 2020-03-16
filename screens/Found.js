@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Text, View, StyleSheet } from "react-native";
+import React, { Component } from 'react'
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native'
 import {
   Container,
   Icon,
@@ -11,38 +11,38 @@ import {
   Right,
   Left,
   Button
-} from "native-base";
-import gStyles from "../GlobalStyle/gStyles";
+} from 'native-base'
+import gStyles from '../GlobalStyle/gStyles'
 
 export default class Found extends Component {
   state = {
     users: [
       {
-        name: "Jhon",
-        city: "New York",
+        name: 'Jhon',
+        city: 'New York',
         check: false
       },
       {
-        name: "Doe",
-        city: "Bangkok",
+        name: 'Doe',
+        city: 'Bangkok',
         check: true
       },
       {
-        name: "Cena",
-        city: "Yangon",
+        name: 'Cena',
+        city: 'Yangon',
         check: false
       }
     ]
-  };
+  }
 
   checkHandler = i => {
-    console.log("Hola");
-    let temp = this.state.users;
-    temp[i].check = !temp[i].check;
+    console.log('Hola')
+    let temp = this.state.users
+    temp[i].check = !temp[i].check
     this.setState({
       user: temp[i].check
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -62,23 +62,32 @@ export default class Found extends Component {
                     key={index}
                     style={{
                       borderBottomWidth: 0,
-                      width: "100%",
+                      width: '100%',
                       paddingRight: 30
                     }}
                   >
                     <Left>
                       <View>
-                        <Text>
-                          <Text style={{ fontFamily: "notoSerif-bold" }}>
-                            UserName
+                        <TouchableOpacity
+                          onPress={() =>
+                            this.props.navigation.navigate('Profile', {
+                              received_letter: 9,
+                              friends: 1,
+                              languages: ['English'],
+                              ages: 22,
+                              profile_img: require('../assets/images/2.jpg')
+                            })
+                          }
+                        >
+                          <Text style={{ paddingVertical: 10 }}>
+                            <Icon type="FontAwesome" name="user-secret" />{' '}
+                            &nbsp;
+                            {user.name}
                           </Text>
-                          : {user.name}
-                        </Text>
+                        </TouchableOpacity>
                         <Text>
-                          <Text style={{ fontFamily: "notoSerif-bold" }}>
-                            City
-                          </Text>
-                          : {user.city}
+                          <Icon type="FontAwesome5" name="city" /> &nbsp;
+                          {user.city}
                         </Text>
                       </View>
                     </Left>
@@ -89,17 +98,17 @@ export default class Found extends Component {
                       />
                     </Right>
                   </ListItem>
-                );
+                )
               })}
             </Body>
           </CardItem>
         </Card>
         <Button block rounded style={styles.buttonSubmit}>
-          <Text style={{ color: "white" }}>Send to selected users</Text>
+          <Text style={{ color: 'white' }}>Send to selected users</Text>
           <Icon
             type="FontAwesome"
             name="send"
-            style={{ fontSize: 20, color: "white", marginTop: 2 }}
+            style={{ fontSize: 20, color: 'white', marginTop: 2 }}
           />
         </Button>
         <Button
@@ -111,28 +120,28 @@ export default class Found extends Component {
           <Text>Cancel</Text>
         </Button>
       </Container>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#E1E2EF"
+    backgroundColor: '#E1E2EF'
   },
   textFound: {
-    fontFamily: "notoSerif-bold",
+    fontFamily: 'notoSerif-bold',
     fontSize: 23,
-    textAlign: "center",
+    textAlign: 'center',
     marginTop: 50,
     marginBottom: 20
   },
   buttonSubmit: {
-    backgroundColor: "#9381FF",
+    backgroundColor: '#9381FF',
     marginVertical: 24,
     marginHorizontal: 10
   },
   buttonCancel: {
-    backgroundColor: "#E1E2EF",
+    backgroundColor: '#E1E2EF',
     marginHorizontal: 10
   }
-});
+})

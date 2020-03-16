@@ -29,12 +29,27 @@ export default class Category extends Component {
               }}
               header
             >
-              <Icon
-                type="FontAwesome5"
-                name="user-astronaut"
-                style={{ fontSize: 20, marginTop: 1 }}
-              />
-              <Text>{this.props.header}</Text>
+              <TouchableOpacity
+                onPress={() =>
+                  this.props.navigation.navigate('Profile', {
+                    name: 'Nikola',
+                    received_letter: 9,
+                    friends: 1,
+                    languages: ['English'],
+                    ages: 22,
+                    profile_img: require('../assets/images/4.jpg')
+                  })
+                }
+              >
+                <View style={{ flexDirection: 'row' }}>
+                  <Icon
+                    type="FontAwesome5"
+                    name="user-astronaut"
+                    style={{ fontSize: 20, marginTop: 1 }}
+                  />
+                  <Text style={{ paddingTop: 4 }}>{this.props.header}</Text>
+                </View>
+              </TouchableOpacity>
             </CardItem>
             <CardItem
               style={{
