@@ -22,7 +22,7 @@ export default class Category extends Component {
           <Card style={{ borderRadius: 10 }}>
             <CardItem
               style={{
-                backgroundColor: '#D4CBE5',
+                backgroundColor: '#878E99',
                 height: 50,
                 borderTopLeftRadius: 10,
                 borderTopRightRadius: 10

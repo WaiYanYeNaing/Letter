@@ -22,7 +22,7 @@ export default class Second extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{ padding: 18 }}>
         <Grid>
           <Col>
             <Button
@@ -109,9 +109,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#00e00e'
   },
   button: {
-    borderRadius: 5,
-    height: 170,
-    margin: 10,
+    borderRadius: 15,
+    height: 180,
+    margin: 7,
     justifyContent: 'center',
     backgroundColor: '#fff'
   }

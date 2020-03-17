@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   buttonSubmit: {
-    backgroundColor: '#9381FF',
+    backgroundColor: '#878E99',
     marginVertical: 24,
     marginHorizontal: 10
   },

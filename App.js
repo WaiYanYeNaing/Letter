@@ -45,7 +45,7 @@ function App() {
               title: 'Login',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -58,7 +58,7 @@ function App() {
               title: 'Letter',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -71,7 +71,7 @@ function App() {
               title: 'Write Your Letter',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -84,7 +84,7 @@ function App() {
               title: 'Matches Found',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -97,7 +97,7 @@ function App() {
               title: 'Manual Match',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -110,7 +110,7 @@ function App() {
               title: '',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -123,7 +123,7 @@ function App() {
               title: '',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }
@@ -136,7 +136,7 @@ function App() {
               title: 'Profile',
               headerTitleAlign: 'center',
               headerTintColor: 'white',
-              headerStyle: { backgroundColor: '#B497D6' },
+              headerStyle: { backgroundColor: '#3CA3F2' },
               headerTitleStyle: {
                 fontFamily: 'notoSerif-bold'
               }

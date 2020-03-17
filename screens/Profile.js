@@ -25,7 +25,7 @@ export default class Profile extends Component {
         />
         <Text
           style={[
-            { marginTop: 40, fontFamily: 'notoSerif-bold' },
+            { marginTop: 40, fontFamily: 'notoSerif-bold', fontSize: 20 },
             gStyles.center
           ]}
         >
@@ -141,14 +141,19 @@ const styles = StyleSheet.create({
   },
   thumbnail: {
     marginTop: 50,
-    width: 180,
-    height: 180,
+    width: 120,
+    height: 120,
     borderRadius: 100,
     borderWidth: 4,
     borderColor: '#836aa3'
   },
   ListItemContainer: {
-    marginTop: 40,
-    paddingHorizontal: 50
+    marginTop: 20,
+    paddingTop: 40,
+    paddingHorizontal: 50,
+    borderTopRightRadius: 50,
+    borderTopLeftRadius: 50,
+    backgroundColor: '#F7F7FF',
+    height: 600
   }
 })

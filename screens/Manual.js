@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#EAEBF9'
   },
   buttonApply: {
-    backgroundColor: '#9381FF',
+    backgroundColor: '#878E99',
     marginVertical: 24,
     marginHorizontal: 10
   }

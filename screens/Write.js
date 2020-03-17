@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
   button: {
     paddingLeft: 15,
-    backgroundColor: '#9381FF',
+    backgroundColor: '#878E99',
     justifyContent: 'center'
   }
 })

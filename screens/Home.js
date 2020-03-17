@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, StatusBar } from 'react-native'
+import { Text, StyleSheet, StatusBar, ImageBackground } from 'react-native'
 import {
   Container,
   Header,
@@ -187,19 +187,18 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBar.currentHeight,
     backgroundColor: '#E1E2EF'
   },
   header: {
-    marginTop: 10,
+    paddingTop: 10,
     backgroundColor: '#F0F6F7FF'
   },
   button: {
     marginTop: 4,
-    backgroundColor: '#B497D6'
+    backgroundColor: '#3CA3F2'
   },
   footerTab: {
-    backgroundColor: '#B497D6'
+    backgroundColor: '#3CA3F2'
   },
   footerSelected: {
     backgroundColor: 'rgba(52, 52, 52, 0.25)'

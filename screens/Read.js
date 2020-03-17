@@ -21,8 +21,15 @@ export default class Read extends Component {
             style={{ fontSize: 90 }}
           />
         </Text>
-        <Card style={gStyles.card}>
-          <CardItem style={[gStyles.card, { margin: 20 }]}>
+        <Card
+          style={{
+            borderTopRightRadius: 50,
+            borderTopLeftRadius: 50,
+            backgroundColor: '#F7F7FF',
+            height: 600
+          }}
+        >
+          <CardItem style={{ margin: 20, backgroundColor: '#F7F7FF' }}>
             <SafeAreaView>
               <ScrollView style={{ height: 320, padding: 13 }}>
                 <Body>
@@ -33,7 +40,7 @@ export default class Read extends Component {
               </ScrollView>
             </SafeAreaView>
           </CardItem>
-          <CardItem style={[gStyles.card, { margin: 20 }]}>
+          <CardItem style={{ margin: 20, backgroundColor: '#F7F7FF' }}>
             <Body style={{ paddingHorizontal: 20 }}>
               <TouchableOpacity
                 onPress={() => this.props.navigation.navigate('Profile')}
